@@ -1,7 +1,7 @@
 /**
  * editor_plugin_src.js
  *
- * Copyright 2011, Sutulustus - Triad Advertising
+ * Copyright 2015, CyJimmy264 — Maksim Veynberg
  * Released under MIT License.
  *
  * License: http://www.opensource.org/licenses/mit-license.php
@@ -39,9 +39,9 @@
         getInfo: function () {
              return {
                 longname: 'CodeMagic - syntax coloring and intendation',
-                author: 'Sutulustus',
-                authorurl: 'http://www.triad.sk/#/en',
-                version: '0.9.5'
+                author: 'CyJimmy264',
+                authorurl: 'http://cj264.ru/',
+                version: '0.9.6'
              };
         }
     });

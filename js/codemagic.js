@@ -613,6 +613,16 @@ function beautify(id) {
     var indent_char = ' ';
     var brace_style = 'collapse';  // collapse, expand, end-expand
 
-    document.getElementById(id).value = style_html(source, indent_size, indent_char, 120, brace_style);
+    document.getElementById(id).value = html_beautify(source, {
+                    'indent_inner_html': false,
+                    'indent_size': indent_size,
+                    'indent_char': indent_char,
+                    'wrap_line_length': 120,
+                    'brace_style': brace_style,
+                    'unformatted': ['a', 'sub', 'sup', 'b', 'i', 'u'],
+                    'preserve_newlines': true,
+                    'max_preserve_newlines': 5,
+                    'indent_handlebars': false
+                });
     the.beautify_in_progress = false;
 }
